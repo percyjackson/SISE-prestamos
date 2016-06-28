@@ -18,7 +18,7 @@ class ElementsControllerTest < ActionController::TestCase
 
   test "should create element" do
     assert_difference('Element.count') do
-      post :create, element: { description: @element.description, loaned: @element.loaned, name: @element.name }
+      post :create, element: { description: @element.description, id: @element.id, loaned: @element.loaned, name: @element.name }
     end
 
     assert_redirected_to element_path(assigns(:element))
@@ -35,7 +35,7 @@ class ElementsControllerTest < ActionController::TestCase
   end
 
   test "should update element" do
-    patch :update, id: @element, element: { description: @element.description, loaned: @element.loaned, name: @element.name }
+    patch :update, id: @element, element: { description: @element.description, id: @element.id, loaned: @element.loaned, name: @element.name }
     assert_redirected_to element_path(assigns(:element))
   end
 

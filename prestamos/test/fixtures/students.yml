@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  studentid: 1
+  id: MyString
+  studentId: MyString
   name: MyString
   email: MyString
   phone: MyString
 
 two:
-  studentid: 1
+  id: MyString
+  studentId: MyString
   name: MyString
   email: MyString
   phone: MyString

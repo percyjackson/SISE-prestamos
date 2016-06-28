@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Id</th>
       <th>Name</th>
       <th>Description</th>
       <th>Loaned</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @elements.each do |element| %>
       <tr>
+        <td><%= element.id %></td>
         <td><%= element.name %></td>
         <td><%= element.description %></td>
         <td><%= element.loaned %></td>

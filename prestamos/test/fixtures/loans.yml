@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 2016-06-26 03:33:49
-  quantity: 1
   student_id: 
   element_id: 
+  date: 2016-06-28 15:57:44
+  quantity: 1
 
 two:
-  date: 2016-06-26 03:33:49
-  quantity: 1
   student_id: 
   element_id: 
+  date: 2016-06-28 15:57:44
+  quantity: 1
