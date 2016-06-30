@@ -2,6 +2,13 @@ Rails.application.routes.draw do
   resources :loans
   resources :students
   resources :elements
+  
+namespace :api, defaults: {format: 'json'} do
+  resources :loans, only: [:index, :create, :destroy, :update, :show]
+  resources :students, only: [:index, :create, :destroy, :update, :show]
+  resources :elements, only: [:index, :create, :destroy, :update, :show]
+end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
